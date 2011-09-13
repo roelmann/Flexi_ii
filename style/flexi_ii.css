@@ -1,0 +1,92 @@
+#page-header {
+	background:[[setting:headerbackground]];
+	background-image:url([[setting:headerbackgroundimage]]);
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 100%;
+	min-height: 110px;
+	margin: 0;
+	padding: 0;
+    -moz-border-radius-topleft:[[setting:headerrctl]]; -moz-border-radius-topright:[[setting:headerrctr]]; border-top-left-radius:[[setting:headerrctl]]; border-top-right-radius:[[setting:headerrctr]];
+    -moz-border-radius-bottomleft: [[setting:headerrcbl]]; -moz-border-radius-bottomright: [[setting:headerrcbr]]; border-bottom-left-radius:[[setting:headerrcbl]]; border-bottom-right-radius:[[setting:headerrcbr]];
+}
+#page-header .headermain {
+position:absolute;
+margin: [[setting:headertextposition]];
+z-index:10;
+         color: [[setting:headertext]] !important;
+         font-size: [[setting:headertxtsize]];
+         font-weight: [[setting:headertxtweight]];
+         font-style: [[setting:headertxtstyle]];
+}
+#logo { 
+	background: url([[setting:logo]]) no-repeat left top;
+	width: 450px;
+	height: 105px;
+	float: left;
+	left: 0px;
+}
+
+
+
+/* 
+Profileblock
+-----------------------*/
+
+#profileblock {
+	float: right;
+	text-align: right;
+	width: 400px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.headermenu {
+	float:right;
+	clear: right;
+	font-size:1em;
+	margin:0px;
+	text-align:right;
+}
+
+div.user-pic img.userpicture {
+	float: right;
+	clear: right;
+	margin: 8px 8px 8px 0;
+	padding: 0;
+	width: 80px;
+	height: 80px;
+	border: 1px solid #fff;
+}
+
+div#post-log { margin-right: 5px;}
+div#pro-opt {
+	float: right;
+	margin-right: 10px;
+	padding: 0;
+	width: 300px;
+}
+
+div#pro-opt h1 { 
+	color: [[setting:headertext]];
+}
+
+div#pro-opt p.pro-log a,
+div#pro-opt p.pro-log a:link {
+	color: [[setting:links]];
+}
+
+div#pro-opt p.pro-log a:hover {
+	color: [[setting:hoverlinks]];
+}
+.navbar {height:25px;
+         background-image:url([[setting:breadcrumbimage]]);background-repeat: repeat-x;background-color:[[setting:breadcrumb]];
+         color: [[setting:navbartext]] !important;
+         font-size: [[setting:navbartxtsize]];
+         font-weight: [[setting:navbartxtweight]];
+         font-style: [[setting:navbartxtstyle]];}
+
+/** Custom CSS **/
+[[setting:customcss]]
+

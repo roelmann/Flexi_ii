@@ -1,0 +1,858 @@
+/* CSS to style the flexi_ii settings page in order to provide some layout for the settings */
+
+/* A temporary movable 'setting' to show progress ie below this point has not yet been styled */
+#admin-notstyled {margin:1em auto 0.5em auto !important;width:500px;background-color:yellow;}
+#admin-notstyled .form-label, #admin-notstyled .form-setting {display:none !important;}
+#admin-notstyled .form-description {margin: 0 1em !important; text-align: center !important;font-weight:bold;color:red;}
+/* A temporary movable 'setting' to show progress ie below this point has not yet been implemented */
+#admin-notimplemented {margin:1em auto 0.5em auto !important;width:500px;background-color:yellow;}
+#admin-notimplemented .form-label, #admin-notimplemented .form-setting {display:none !important;}
+#admin-notimplemented .form-description {margin: 0 0 0 1em !important; text-align: center !important;font-weight:bold;color:red;}
+/* A temporary movable 'setting' to show planned settings to add */
+#admin-planned {margin:1em auto 0.5em auto !important;width:800px;background-color:darkgreen;}
+#admin-planned .form-label, #admin-planned .form-setting {display:none !important;}
+#admin-planned .form-description {margin: 0 0 0 1em !important; text-align: center !important;font-weight:bold;color:yellow;}
+
+/* General page settings */
+#adminsettings h2{display:none !important;}
+#adminsettings fieldset {margin-top: 0em !important; padding: 0em 0.5em !important;}
+#adminsettings .form-item {clear: none !important; margin: 1em !important;}
+
+/* Instructions at top of settings page */
+#admin-instructions {margin:1em 0 0.5em 0 !important;}
+#admin-instructions .form-label, #admin-instructions .form-setting {display:none !important;}
+#admin-instructions .form-description {margin: 0 1em !important; text-align: left;}
+
+/* Double bar - as they are separate 'settings' even the separator bars need to be styled separately */
+#admin-doublebar1,
+#admin-doublebar2,
+#admin-doublebar3,
+#admin-doublebar4,
+#admin-doublebar5,
+#admin-doublebar6,
+#admin-doublebar7,
+#admin-doublebar8,
+#admin-doublebar9,
+#admin-doublebar10          {margin:0 !important;}
+#admin-doublebar1 .form-label, #admin-doublebar1 .form-setting,
+#admin-doublebar2 .form-label, #admin-doublebar2 .form-setting,
+#admin-doublebar3 .form-label, #admin-doublebar3 .form-setting,
+#admin-doublebar4 .form-label, #admin-doublebar4 .form-setting,
+#admin-doublebar5 .form-label, #admin-doublebar5 .form-setting,
+#admin-doublebar6 .form-label, #admin-doublebar6 .form-setting,
+#admin-doublebar7 .form-label, #admin-doublebar7 .form-setting,
+#admin-doublebar8 .form-label, #admin-doublebar8 .form-setting,
+#admin-doublebar9 .form-label, #admin-doublebar9 .form-setting,
+#admin-doublebar10 .form-label, #admin-doublebar10 .form-setting          {display:none !important;}
+#admin-doublebar1 .form-description,
+#admin-doublebar2 .form-description,
+#admin-doublebar3 .form-description,
+#admin-doublebar5 .form-description,
+#admin-doublebar6 .form-description,
+#admin-doublebar7 .form-description,
+#admin-doublebar8 .form-description,
+#admin-doublebar9 .form-description,
+#admin-doublebar10 .form-description          {margin: 0 !important; text-align: center !important;}
+#admin-doublebar4 .form-description {margin: 3em auto 0 auto !important; text-align: center !important;}
+/*  bar - as they are separate 'settings' even the separator bars need to be styled separately */
+#admin-bar1,
+#admin-bar2,
+#admin-bar3,
+#admin-bar4,
+#admin-bar5,
+#admin-bar6,
+#admin-bar7,
+#admin-bar8,
+#admin-bar9,
+#admin-bar10          {margin:0 !important;}
+#admin-bar1 .form-label, #admin-bar1 .form-setting,
+#admin-bar2 .form-label, #admin-bar2 .form-setting,
+#admin-bar3 .form-label, #admin-bar3 .form-setting,
+#admin-bar4 .form-label, #admin-bar4 .form-setting,
+#admin-bar5 .form-label, #admin-bar5 .form-setting,
+#admin-bar6 .form-label, #admin-bar6 .form-setting,
+#admin-bar7 .form-label, #admin-bar7 .form-setting,
+#admin-bar8 .form-label, #admin-bar8 .form-setting,
+#admin-bar9 .form-label, #admin-bar9 .form-setting,
+#admin-bar10 .form-label, #admin-bar10 .form-setting          {display:none !important;}
+#admin-bar1 .form-description,
+#admin-bar2 .form-description,
+#admin-bar3 .form-description,
+#admin-bar4 .form-description,
+#admin-bar5 .form-description,
+#admin-bar6 .form-description,
+#admin-bar7 .form-description,
+#admin-bar8 .form-description,
+#admin-bar9 .form-description,
+#admin-bar10 .form-description          {margin: 0 !important; text-align: center !important;}
+
+
+
+
+/*********************************************************************************************************************/
+
+/* Page section heading */
+#admin-pgsettingsheading {margin:1em 0 0.5em 0 !important;}
+#admin-pgsettingsheading .form-label, #admin-pgsettingsheading .form-setting {display:none !important;}
+#admin-pgsettingsheading .form-description {margin: 0 1em !important; text-align: left;}
+
+/* Page screenshot */
+#admin-pgimage {margin:1em 0 0.5em 0 !important; width:22em;}
+#admin-pgimage .form-label, #admin-pgimage .form-setting {display:none !important;}
+#admin-pgimage .form-description {margin: 0 13em !important; text-align: left;}
+
+/* HTML Background - colour */
+#admin-htmlbkcolour {width:30em;margin-bottom:1em !important;}
+#admin-htmlbkcolour .form-label .form-shortname, #admin-htmlbkcolour .form-setting .form-defaultinfo {display:none !important;}
+#admin-htmlbkcolour .form-setting {margin: -33em 0 0 17em !important; text-align: left;width:20em;height:1.5em;}
+#admin-htmlbkcolour .form-label {margin: 0 0 0 0em !important;width:12em !important;}
+#admin-htmlbkcolour .form-description {margin: 0 0 0 17em !important;width:20em;}
+#admin-htmlbkcolour .form-item, #admin-htmlbkcolour .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* HTML Background - image */
+#admin-htmlbkimage {width:30em;margin-bottom:1em !important;}
+#admin-htmlbkimage .form-label .form-shortname, #admin-htmlbkimage .form-setting .form-defaultinfo,#admin-htmlbkimage .form-label {display:none !important;}
+#admin-htmlbkimage .form-setting {margin: -4.75em 0 0 27em !important; text-align: left;width:20em;height:1.5em;}
+#admin-htmlbkimage .form-description{margin: 0 0 0 27em !important;width:20em;}
+#admin-htmlbkimage .form-item, #admin-htmlbkimage .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Page Wrapper Background - colour */
+#admin-pwrapbkcolour {width:30em;margin-bottom:1em !important;}
+#admin-pwrapbkcolour .form-label .form-shortname, #admin-pwrapbkcolour .form-setting .form-defaultinfo {display:none !important;}
+#admin-pwrapbkcolour .form-setting {margin: -1em 0 0 17em !important; text-align: left;width:20em;height:1.5em;}
+#admin-pwrapbkcolour .form-label {margin: 0em 0 0 0em !important;width:12em !important;}
+#admin-pwrapbkcolour .form-description {margin: 0 0 0 17em !important;width:20em;}
+#admin-pwrapbkcolour .form-item, #admin-pwrapbkcolour .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Page Wrapper - image */
+#admin-pwrapbkimage {width:30em;margin-bottom:1em !important;}
+#admin-pwrapbkimage .form-label .form-shortname, #admin-pwrapbkimage .form-setting .form-defaultinfo,#admin-pwrapbkimage .form-label {display:none !important;}
+#admin-pwrapbkimage .form-setting {margin: -4.75em 0 0 27em !important; text-align: left;width:20em;height:1.5em;}
+#admin-pwrapbkimage .form-description{margin: 0 0 0 27em !important;width:20em;}
+#admin-pwrapbkimage .form-item, #admin-pwrapbkimage .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Side pre Background - colour */
+#admin-sprebkcolour {width:30em;margin-bottom:1em !important;}
+#admin-sprebkcolour .form-label .form-shortname, #admin-sprebkcolour .form-setting .form-defaultinfo {display:none !important;}
+#admin-sprebkcolour .form-setting {margin: 2em 0 0 17em !important; text-align: left;width:20em;height:1.5em;}
+#admin-sprebkcolour .form-label {margin: 0em 0 0 0em !important;width:12em !important;}
+#admin-sprebkcolour .form-description {margin: 0 0 0 17em !important;width:20em;}
+#admin-sprebkcolour .form-item, #admin-sprebkcolour .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Side pre - image */
+#admin-sprebkimage {width:30em;margin-bottom:1em !important;}
+#admin-sprebkimage .form-label .form-shortname, #admin-sprebkimage .form-setting .form-defaultinfo,#admin-sprebkimage .form-label {display:none !important;}
+#admin-sprebkimage .form-setting {margin: -1.5em 0 0 17em !important; text-align: left;width:20em;height:1.5em;}
+#admin-sprebkimage .form-description{margin: 0 0 0 17em !important;width:20em;}
+#admin-sprebkimage .form-item, #admin-sprebkimage .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Side post Background - colour */
+#admin-spostbkcolour {width:30em;margin-bottom:1em !important;}
+#admin-spostbkcolour .form-label .form-shortname, #admin-spostbkcolour .form-setting .form-defaultinfo, #admin-spostbkcolour .form-label  {display:none !important;}
+#admin-spostbkcolour .form-setting {margin: -8em 0 0 48em !important; text-align: left;width:20em;height:1.5em;}
+#admin-spostbkcolour .form-description {margin: 0 0 0 48em !important;width:7em;text-align:right !important;}
+#admin-spostbkcolour .form-item, #admin-spostbkcolour .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Side post - image */
+#admin-spostbkimage {width:30em;margin-bottom:1em !important;}
+#admin-spostbkimage .form-label .form-shortname, #admin-spostbkimage .form-setting .form-defaultinfo,#admin-spostbkimage .form-label {display:none !important;}
+#admin-spostbkimage .form-setting {margin: -1.5em 0 0 37em !important; text-align: left;width:20em;height:1.5em;}
+#admin-spostbkimage .form-description{margin: 0 0 0 37em !important;width:18em;text-align:right !important;}
+#admin-spostbkimage .form-item, #admin-spostbkimage .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Centre Region Background - colour */
+#admin-centrebkcolour {width:30em;margin-bottom:1em !important;}
+#admin-centrebkcolour .form-label .form-shortname, #admin-centrebkcolour .form-setting .form-defaultinfo {display:none !important;}
+#admin-centrebkcolour .form-setting {margin: 0em 0 0 27em !important; text-align: left;width:20em;height:1.5em;}
+#admin-centrebkcolour .form-label {margin: 0em 0 0 0em !important;width:12em !important;}
+#admin-centrebkcolour .form-description {margin: 0 0 0 27em !important;width:20em;}
+#admin-centrebkcolour .form-item, #admin-centrebkcolour .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Centre Region - image */
+#admin-centrebkimage {width:30em;margin-bottom:1em !important;}
+#admin-centrebkimage .form-label .form-shortname, #admin-centrebkimage .form-setting .form-defaultinfo,#admin-centrebkimage .form-label {display:none !important;}
+#admin-centrebkimage .form-setting {margin: -1.5em 0 0 27em !important; text-align: left;width:20em;height:1.5em;}
+#admin-centrebkimage .form-description{margin: 0 0 0 27em !important;width:20em;}
+#admin-centrebkimage .form-item, #admin-centrebkimage .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Page wrap border - colour */
+#admin-pageborder {width:30em;margin-bottom:1em !important;}
+#admin-pageborder .form-label .form-shortname, #admin-pageborder .form-setting .form-defaultinfo {display:none !important;}
+#admin-pageborder .form-setting {margin: -1em 0 0 16em !important; text-align: left;width:20em;height:1.5em;}
+#admin-pageborder .form-label {margin: 0em 0 0 0em !important;width:12em !important;}
+#admin-pageborder .form-description {margin: 0 0 0 16em !important;width:30em;}
+#admin-pageborder .form-item, #admin-pageborder .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Footer Background - colour */
+#admin-footerbkcolour {width:30em;margin-bottom:1em !important;}
+#admin-footerbkcolour .form-label .form-shortname, #admin-footerbkcolour .form-setting .form-defaultinfo {display:none !important;}
+#admin-footerbkcolour .form-setting {margin: -0.8em 0 0 17em !important; text-align: left;width:20em;height:1.5em;}
+#admin-footerbkcolour .form-label {margin: 0em 0 0 0em !important;width:12em !important;}
+#admin-footerbkcolour .form-description {margin: 0 0 0 17em !important;width:20em;color:#fff;}
+#admin-footerbkcolour .form-item, #admin-footerbkcolour .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Footer - image */
+#admin-footerbkimage {width:30em;margin-bottom:1em !important;}
+#admin-footerbkimage .form-label .form-shortname, #admin-footerbkimage .form-setting .form-defaultinfo,#admin-footerbkimage .form-label {display:none !important;}
+#admin-footerbkimage .form-setting {margin: -4.75em 0 0 27em !important; text-align: left;width:20em;height:1.5em;}
+#admin-footerbkimage .form-description{margin: 0 0 0 27em !important;width:20em;color:#fff;}
+#admin-footerbkimage .form-item, #admin-footerbkimage .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+/* Main body text colour */
+#admin-maintext {width:30em;margin-bottom:1em !important;}
+#admin-maintext .form-label .form-shortname, #admin-maintext .form-setting .form-defaultinfo {display:none !important;}
+#admin-maintext .form-setting {margin: -1em 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-maintext .form-label{margin: 0 !important;width:8em !important;}
+#admin-maintext .form-description{margin: 0 0 0 9em !important;width:20em;}
+#admin-maintext .form-item, #admin-pgbkcolour .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+
+/* Links - main */
+#admin-links {width:30em;margin-bottom:1em !important;}
+#admin-links .form-label .form-shortname, #admin-links .form-setting .form-defaultinfo {display:none !important;}
+#admin-links .form-setting {margin: -1em 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-links .form-label{margin: 0 !important;width:8em !important;}
+#admin-links .form-description{margin: 0 0 0 9em !important;width:20em;}
+#admin-links .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Links - hover */
+#admin-hoverlinks {width:30em;margin-bottom:1em !important;}
+#admin-hoverlinks .form-label .form-shortname, #admin-hoverlinks .form-setting .form-defaultinfo,#admin-hoverlinks .form-label {display:none !important;}
+#admin-hoverlinks .form-setting {margin: -4.75em 0 0 32em !important; text-align: left;width:20em;height:1.5em;}
+#admin-hoverlinks .form-description{margin: 0 0 0 32em !important;width:20em;}
+#admin-hoverlinks .form-item, #admin-hoverlinks .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Links - dimmed */
+#admin-dimmedlinks {width:30em;margin-bottom:1em !important;}
+#admin-dimmedlinks .form-label .form-shortname, #admin-dimmedlinks .form-setting .form-defaultinfo,#admin-dimmedlinks .form-label {display:none !important;}
+#admin-dimmedlinks .form-setting {margin: -1.5em 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dimmedlinks .form-description{margin: 0 0 0 9em !important;width:20em;}
+#admin-dimmedlinks .form-item, #admin-dimmedlinks .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+/* Section Heading: background colour */
+#admin-secheadbgcolour {width:30em;margin-bottom:1em !important;}
+#admin-secheadbgcolour .form-label .form-shortname, #admin-secheadbgcolour .form-setting .form-defaultinfo {display:none !important;}
+#admin-secheadbgcolour .form-setting {margin: -1em 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-secheadbgcolour .form-label{margin: 0 !important;width:8em !important;}
+#admin-secheadbgcolour .form-description{margin: 0 0 0 9em !important;width:20em;}
+#admin-secheadbgcolour .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Section heading: background image */
+#admin-secheadbgimage {width:30em;margin-bottom:1em !important;}
+#admin-secheadbgimage .form-label .form-shortname, #admin-secheadbgimage .form-setting .form-defaultinfo,#admin-secheadbgimage .form-label {display:none !important;}
+#admin-secheadbgimage .form-setting {margin: -4.75em 0 0 31em !important; text-align: left;width:20em;height:1.5em;}
+#admin-secheadbgimage .form-description{margin: 0 0 0 31em !important;width:20em;}
+#admin-secheadbgimage .form-item, #admin-secheadbgimage .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Section heading: text colour */
+#admin-secheadtxtcolour {width:30em;margin-bottom:1em !important;}
+#admin-secheadtxtcolour .form-label .form-shortname, #admin-secheadtxtcolour .form-setting .form-defaultinfo,#admin-secheadtxtcolour .form-label {display:none !important;}
+#admin-secheadtxtcolour .form-setting {margin: -1em 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-secheadtxtcolour .form-description{margin: 0 0 0 9em !important;width:20em;}
+#admin-secheadtxtcolour .form-item, #admin-secheadtxtcolour .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Section Heading: text size */
+#admin-secheadtxtsize {width:30em;margin-bottom:1em !important;}
+#admin-secheadtxtsize .form-label .form-shortname, #admin-secheadtxtsize .form-setting .form-defaultinfo,#admin-secheadtxtsize .form-label {display:none !important;}
+#admin-secheadtxtsize .form-setting {margin: -4.75em 0 0 26em !important; text-align: left;width:20em;height:1.5em;}
+#admin-secheadtxtsize .form-description{margin: 0 0 0 26em !important;width:20em;}
+#admin-secheadtxtsize .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Section heading: text weight */
+#admin-secheadtxtweight {width:30em;margin-bottom:1em !important;}
+#admin-secheadtxtweight .form-label .form-shortname, #admin-secheadtxtweight .form-setting .form-defaultinfo,#admin-secheadtxtweight .form-label {display:none !important;}
+#admin-secheadtxtweight .form-setting {margin: -4.75em 0 0 34em !important; text-align: left;width:8em;height:1.5em;}
+#admin-secheadtxtweight .form-description{margin: 0 0 0 34em !important;width:8em;}
+#admin-secheadtxtweight .form-item, #admin-secheadtxtweight .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Section heading: text style */
+#admin-secheadtxtstyle {width:30em;margin-bottom:1em !important;}
+#admin-secheadtxtstyle .form-label .form-shortname, #admin-secheadtxtstyle .form-setting .form-defaultinfo,#admin-secheadtxtstyle .form-label {display:none !important;}
+#admin-secheadtxtstyle .form-setting {margin: -4.75em 0 0 44em !important; text-align: left;width:8em;height:1.5em;}
+#admin-secheadtxtstyle .form-description{margin: 0 0 0 44em !important;width:8em;}
+#admin-secheadtxtstyle .form-item, #admin-secheadtxtstyle .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Section Heading: Rounded corners top left */
+#admin-secheadrctl {width:30em;margin-bottom:1em !important;}
+#admin-secheadrctl .form-label .form-shortname, #admin-secheadrctl .form-setting .form-defaultinfo {display:none !important;}
+#admin-secheadrctl .form-setting {margin: 1em 0 0 28em !important; text-align: left;width:20em;height:1.5em;}
+#admin-secheadrctl .form-label{margin: 0 !important;width:12em !important;}
+#admin-secheadrctl .form-description{margin: 0 0 0 28em !important;width:8em;}
+#admin-secheadrctl .form-item, #admin-secheadrctl .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Section heading: Rounded corners top right */
+#admin-secheadrctr {width:30em;margin-bottom:1em !important;}
+#admin-secheadrctr .form-label .form-shortname, #admin-secheadrctr .form-setting .form-defaultinfo,#admin-secheadrctr .form-label {display:none !important;}
+#admin-secheadrctr .form-setting {margin: -4.75em 0 0 34em !important; text-align: left;width:8em;height:1.5em;}
+#admin-secheadrctr .form-description{margin: 0 0 0 34em !important;width:8em;}
+#admin-secheadrctr .form-item, #admin-secheadrctr .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Section heading: Rounded corners bottom left */
+#admin-secheadrcbl {width:30em;margin-bottom:1em !important;}
+#admin-secheadrcbl .form-label .form-shortname, #admin-secheadrcbl .form-setting .form-defaultinfo,#admin-secheadrcbl .form-label {display:none !important;}
+#admin-secheadrcbl .form-setting {margin: -4.75em 0 0 42em !important; text-align: left;width:8em;height:1.5em;}
+#admin-secheadrcbl .form-description{margin: 0 0 0 42em !important;width:8em;}
+#admin-secheadrcbl .form-item, #admin-secheadrcbl .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Section heading: Rounded corners bottom right */
+#admin-secheadrcbr {width:30em;margin-bottom:1em !important;}
+#admin-secheadrcbr .form-label .form-shortname, #admin-secheadrcbr .form-setting .form-defaultinfo,#admin-secheadrcbr .form-label {display:none !important;}
+#admin-secheadrcbr .form-setting {margin: -4.75em 0 0 48em !important; text-align: left;width:8em;height:1.5em;}
+#admin-secheadrcbr .form-description{margin: 0 0 0 48em !important;width:8em;}
+#admin-secheadrcbr .form-item, #admin-secheadrcbr .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+/**************************************************************************************/
+/* Header section heading */
+#admin-hdrsettingsheading {margin:1em 0 0.5em 0 !important;}
+#admin-hdrsettingsheading .form-label, #admin-hdrsettingsheading .form-setting {display:none !important;}
+#admin-hdrsettingsheading .form-description {margin: 0 1em !important; text-align: left;}
+
+/* Header screenshot */
+#admin-headersettingsimage {margin:1em 0 0.5em 0 !important; width:22em;}
+#admin-headersettingsimage .form-label, #admin-headersettingsimage .form-setting {display:none !important;}
+#admin-headersettingsimage .form-description {margin: 0 1em !important; text-align: left;}
+
+/* Menu position 1*/
+#admin-menu1 {width:30em;margin-bottom:1em !important;}
+#admin-menu1 .form-label .form-shortname, #admin-menu1 .form-setting .form-defaultinfo {display:none !important;}
+#admin-menu1 .form-setting {margin: -10em 0 0 46em !important; text-align: left;width:20em;height:1.5em;}
+#admin-menu1 .form-label {margin: 0em 0 0 32em !important;width:12em !important;}
+#admin-menu1 .form-description {margin: 0 0 0 46em !important;width:20em;}
+#admin-menu1 .form-item, #admin-menu1 .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Menu position 2*/
+#admin-menu2 {width:30em;margin-bottom:1em !important;}
+#admin-menu2 .form-label .form-shortname, #admin-menu2 .form-setting .form-defaultinfo {display:none !important;}
+#admin-menu2 .form-setting {margin: -1em 0 0 46em !important; text-align: left;width:20em;height:1.5em;}
+#admin-menu2 .form-label {margin: 0em 0 0 32em !important;width:12em !important;}
+#admin-menu2 .form-description {margin: 0 0 0 46em !important;width:20em;}
+#admin-menu2 .form-item, #admin-menu2 .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Menu position 3*/
+#admin-menu3 {width:30em;margin-bottom:1em !important;}
+#admin-menu3 .form-label .form-shortname, #admin-menu3 .form-setting .form-defaultinfo {display:none !important;}
+#admin-menu3 .form-setting {margin: -1em 0 0 46em !important; text-align: left;width:20em;height:1.5em;}
+#admin-menu3 .form-label {margin: 0em 0 0 32em !important;width:12em !important;}
+#admin-menu3 .form-description {margin: 0 0 0 46em !important;width:20em;}
+#admin-menu3 .form-item, #admin-menu3 .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+
+
+/* Profile Block */
+#admin-profilevisible {width:30em;margin-bottom:1em !important;}
+#admin-profilevisible .form-label .form-shortname, #admin-profilevisible .form-setting .form-defaultinfo {display:none !important;}
+#admin-profilevisible .form-setting {margin: 0em 0 0 50em !important; text-align: left;width:20em;height:1.5em;}
+#admin-profilevisible .form-label {margin: 0em 0 0 36em !important;width:12em !important;}
+#admin-profilevisible .form-description {margin: 0 0 0 50em !important;width:20em;}
+#admin-profilevisible .form-item, #admin-profilevisible .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+/* Page section heading */
+#admin-headerinstructions {margin:1em 0 0.5em 0 !important;}
+#admin-headerinstructions .form-label, #admin-headerinstructions .form-setting {display:none !important;}
+#admin-headerinstructions .form-description {margin: 0 1em !important; text-align: left;}
+
+/* Page screenshot */
+#admin-headerimage {margin:1em 0 0.5em 0 !important; width:22em;}
+#admin-headerimage .form-label, #admin-headerimage .form-setting {display:none !important;}
+#admin-headerimage .form-description {margin: 0 1em !important; text-align: left;}
+
+/* Header background colour */
+#admin-headerbackground {width:30em;margin-bottom:1em !important;}
+#admin-headerbackground .form-label .form-shortname, #admin-headerbackground .form-setting .form-defaultinfo {display:none !important;}
+#admin-headerbackground .form-setting {margin: 2em 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-headerbackground .form-label{margin: 0 !important;width:8em !important;}
+#admin-headerbackground .form-description{margin: 0 0 0 9em !important;width:20em;}
+#admin-headerbackground .form-item, #admin-headerbackground .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Header background image */
+#admin-headerbackgroundimage {width:30em;margin-bottom:1em !important;}
+#admin-headerbackgroundimage .form-label .form-shortname, #admin-headerbackgroundimage .form-setting .form-defaultinfo,#admin-headerbackgroundimage .form-label {display:none !important;}
+#admin-headerbackgroundimage .form-setting {margin: -4.75em 0 0 31em !important; text-align: left;width:20em;height:1.5em;}
+#admin-headerbackgroundimage .form-description{margin: 0 0 0 31em !important;width:20em;}
+#admin-headerbackgroundimage .form-item, #admin-headerbackgroundimage .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Header logo image */
+#admin-logo {width:30em;margin-bottom:1em !important;}
+#admin-logo .form-label .form-shortname, #admin-logo .form-setting .form-defaultinfo,#admin-logo .form-label {display:none !important;}
+#admin-logo .form-setting {margin: -1em 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-logo .form-description{margin: 0 0 0 9em !important;width:20em;}
+#admin-logo .form-item, #admin-logo .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* header text */
+#admin-headertext {width:30em;margin-bottom:1em !important;}
+#admin-headertext .form-label .form-shortname, #admin-headertext .form-setting .form-defaultinfo {display:none !important;}
+#admin-headertext .form-setting {margin: -1em 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-headertext .form-label{margin: 0 !important;width:8em !important;}
+#admin-headertext .form-description{margin: 0 0 0 9em !important;width:15em;}
+#admin-headertext .form-item, #admin-headertext .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Header: text size */
+#admin-headertxtsize {width:30em;margin-bottom:1em !important;}
+#admin-headertxtsize .form-label .form-shortname, #admin-headertxtsize .form-setting .form-defaultinfo,#admin-headertxtsize .form-label {display:none !important;}
+#admin-headertxtsize .form-setting {margin: -4.75em 0 0 26em !important; text-align: left;width:20em;height:1.5em;}
+#admin-headertxtsize .form-description{margin: 0 0 0 26em !important;width:20em;}
+#admin-headertxtsize .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Header: text weight */
+#admin-headertxtweight {width:30em;margin-bottom:1em !important;}
+#admin-headertxtweight .form-label .form-shortname, #admin-headertxtweight .form-setting .form-defaultinfo,#admin-headertxtweight .form-label {display:none !important;}
+#admin-headertxtweight .form-setting {margin: -4.75em 0 0 34em !important; text-align: left;width:8em;height:1.5em;}
+#admin-headertxtweight .form-description{margin: 0 0 0 34em !important;width:8em;}
+#admin-headertxtweight .form-item, #admin-headertxtweight .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Header: text style */
+#admin-headertxtstyle {width:30em;margin-bottom:1em !important;}
+#admin-headertxtstyle .form-label .form-shortname, #admin-headertxtstyle .form-setting .form-defaultinfo,#admin-headertxtstyle .form-label {display:none !important;}
+#admin-headertxtstyle .form-setting {margin: -4.75em 0 0 44em !important; text-align: left;width:8em;height:1.5em;}
+#admin-headertxtstyle .form-description{margin: 0 0 0 44em !important;width:8em;}
+#admin-headertxtstyle .form-item, #admin-headertxtstyle .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* header text */
+#admin-headertextposition {width:30em;margin-bottom:1em !important;}
+#admin-headertextposition .form-label .form-shortname, #admin-headertextposition .form-setting .form-defaultinfo,#admin-headertextposition .form-label {display:none !important;}
+#admin-headertextposition .form-setting {margin: -4.75em 0 0 52em !important; text-align: left;width:20em;height:1.5em;}
+#admin-headertextposition .form-description{margin: 0 0 0 52em !important;width:15em;}
+#admin-headertextposition .form-item, #admin-headertext .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+/* breadcrumb Background - colour */
+#admin-breadcrumb {width:30em;margin-bottom:1em !important;}
+#admin-breadcrumb .form-label .form-shortname, #admin-breadcrumb .form-setting .form-defaultinfo {display:none !important;}
+#admin-breadcrumb .form-setting {margin: -1em 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-breadcrumb .form-label{margin: 0 !important;width:8em !important;}
+#admin-breadcrumb .form-description{margin: 0 0 0 9em !important;width:20em;}
+#admin-breadcrumb .form-item, #admin-breadcrumb .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* breadcrumb Background - image */
+#admin-breadcrumbimage {width:30em;margin-bottom:1em !important;}
+#admin-breadcrumbimage .form-label .form-shortname, #admin-breadcrumbimage .form-setting .form-defaultinfo,#admin-breadcrumbimage .form-label {display:none !important;}
+#admin-breadcrumbimage .form-setting {margin: -4.75em 0 0 31em !important; text-align: left;width:20em;height:1.5em;}
+#admin-breadcrumbimage .form-description{margin: 0 0 0 31em !important;width:20em;}
+#admin-breadcrumbimage .form-item, #admin-breadcrumbimage .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* navbar text */
+#admin-navbartext {width:30em;margin-bottom:1em !important;}
+#admin-navbartext .form-label .form-shortname, #admin-navbartext .form-setting .form-defaultinfo {display:none !important;}
+#admin-navbartext .form-setting {margin: 0 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-navbartext .form-label{margin: 0 !important;width:8em !important;}
+#admin-navbartext .form-description{margin: 0 0 0 9em !important;width:15em;}
+#admin-navbartext .form-item, #admin-navbartext .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* NavBar: text size */
+#admin-navbartxtsize {width:30em;margin-bottom:1em !important;}
+#admin-navbartxtsize .form-label .form-shortname, #admin-navbartxtsize .form-setting .form-defaultinfo,#admin-navbartxtsize .form-label {display:none !important;}
+#admin-navbartxtsize .form-setting {margin: -4.75em 0 0 26em !important; text-align: left;width:20em;height:1.5em;}
+#admin-navbartxtsize .form-description{margin: 0 0 0 26em !important;width:20em;}
+#admin-navbartxtsize .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* NavBar: text weight */
+#admin-navbartxtweight {width:30em;margin-bottom:1em !important;}
+#admin-navbartxtweight .form-label .form-shortname, #admin-navbartxtweight .form-setting .form-defaultinfo,#admin-navbartxtweight .form-label {display:none !important;}
+#admin-navbartxtweight .form-setting {margin: -4.75em 0 0 34em !important; text-align: left;width:8em;height:1.5em;}
+#admin-navbartxtweight .form-description{margin: 0 0 0 34em !important;width:8em;}
+#admin-navbartxtweight .form-item, #admin-navbartxtweight .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* NavBar: text style */
+#admin-navbartxtstyle {width:30em;margin-bottom:1em !important;}
+#admin-navbartxtstyle .form-label .form-shortname, #admin-navbartxtstyle .form-setting .form-defaultinfo,#admin-navbartxtstyle .form-label {display:none !important;}
+#admin-navbartxtstyle .form-setting {margin: -4.75em 0 0 44em !important; text-align: left;width:8em;height:1.5em;}
+#admin-navbartxtstyle .form-description{margin: 0 0 0 44em !important;width:8em;}
+#admin-navbartxtstyle .form-item, #admin-navbartxtstyle .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+/* menu Background - colour */
+#admin-menu {width:30em;margin-bottom:1em !important;}
+#admin-menu .form-label .form-shortname, #admin-menu .form-setting .form-defaultinfo {display:none !important;}
+#admin-menu .form-setting {margin: 0 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-menu .form-label{margin: 0 !important;width:8em !important;}
+#admin-menu .form-description{margin: 0 0 0 9em !important;width:20em;}
+#admin-menu .form-item, #admin-menu .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* menu Background - image */
+#admin-menuimage {width:30em;margin-bottom:1em !important;}
+#admin-menuimage .form-label .form-shortname, #admin-menuimage .form-setting .form-defaultinfo,#admin-menuimage .form-label {display:none !important;}
+#admin-menuimage .form-setting {margin: -4.75em 0 0 31em !important; text-align: left;width:20em;height:1.5em;}
+#admin-menuimage .form-description{margin: 0 0 0 31em !important;width:20em;}
+#admin-menuimage .form-item, #admin-menuimage .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* menu text */
+#admin-menutext {width:30em;margin-bottom:1em !important;}
+#admin-menutext .form-label .form-shortname, #admin-menutext .form-setting .form-defaultinfo {display:none !important;}
+#admin-menutext .form-setting {margin: -1em 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-menutext .form-label{margin: 0 !important;width:8em !important;}
+#admin-menutext .form-description{margin: 0 0 0 9em !important;width:15em;}
+#admin-menutext .form-item, #admin-menutext .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* menu: text size */
+#admin-menutxtsize {width:30em;margin-bottom:1em !important;}
+#admin-menutxtsize .form-label .form-shortname, #admin-menutxtsize .form-setting .form-defaultinfo,#admin-menutxtsize .form-label {display:none !important;}
+#admin-menutxtsize .form-setting {margin: -4.75em 0 0 26em !important; text-align: left;width:20em;height:1.5em;}
+#admin-menutxtsize .form-description{margin: 0 0 0 26em !important;width:20em;}
+#admin-menutxtsize .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* menu: text weight */
+#admin-menutxtweight {width:30em;margin-bottom:1em !important;}
+#admin-menutxtweight .form-label .form-shortname, #admin-menutxtweight .form-setting .form-defaultinfo,#admin-menutxtweight .form-label {display:none !important;}
+#admin-menutxtweight .form-setting {margin: -4.75em 0 0 34em !important; text-align: left;width:8em;height:1.5em;}
+#admin-menutxtweight .form-description{margin: 0 0 0 34em !important;width:8em;}
+#admin-menutxtweight .form-item, #admin-menutxtweight .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* menu: text style */
+#admin-menutxtstyle {width:30em;margin-bottom:1em !important;}
+#admin-menutxtstyle .form-label .form-shortname, #admin-menutxtstyle .form-setting .form-defaultinfo,#admin-menutxtstyle .form-label {display:none !important;}
+#admin-menutxtstyle .form-setting {margin: -4.75em 0 0 44em !important; text-align: left;width:8em;height:1.5em;}
+#admin-menutxtstyle .form-description{margin: 0 0 0 44em !important;width:8em;}
+#admin-menutxtstyle .form-item, #admin-menutxtstyle .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+
+/* dropdown Background - colour */
+#admin-dropdown {width:30em;margin-bottom:1em !important;}
+#admin-dropdown .form-label .form-shortname, #admin-dropdown .form-setting .form-defaultinfo {display:none !important;}
+#admin-dropdown .form-setting {margin: 0 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dropdown .form-label{margin: 0 !important;width:8em !important;}
+#admin-dropdown .form-description{margin: 0 0 0 9em !important;width:20em;}
+#admin-dropdown .form-item, #admin-dropdown .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* dropdown Background - image */
+#admin-dropdownimage {width:30em;margin-bottom:1em !important;}
+#admin-dropdownimage .form-label .form-shortname, #admin-dropdownimage .form-setting .form-defaultinfo,#admin-dropdownimage .form-label {display:none !important;}
+#admin-dropdownimage .form-setting {margin: -4.75em 0 0 31em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dropdownimage .form-description{margin: 0 0 0 31em !important;width:20em;}
+#admin-dropdownimage .form-item, #admin-dropdownimage .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* dropdown text */
+#admin-dropdowntext {width:30em;margin-bottom:1em !important;}
+#admin-dropdowntext .form-label .form-shortname, #admin-dropdowntext .form-setting .form-defaultinfo {display:none !important;}
+#admin-dropdowntext .form-setting {margin: -1em 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dropdowntext .form-label{margin: 0 !important;width:8em !important;}
+#admin-dropdowntext .form-description{margin: 0 0 0 9em !important;width:15em;}
+#admin-dropdowntext .form-item, #admin-dropdowntext .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* dropdown: text size */
+#admin-dropdowntxtsize {width:30em;margin-bottom:1em !important;}
+#admin-dropdowntxtsize .form-label .form-shortname, #admin-dropdowntxtsize .form-setting .form-defaultinfo,#admin-dropdowntxtsize .form-label {display:none !important;}
+#admin-dropdowntxtsize .form-setting {margin: -4.75em 0 0 26em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dropdowntxtsize .form-description{margin: 0 0 0 26em !important;width:20em;}
+#admin-dropdowntxtsize .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* dropdown: text weight */
+#admin-dropdowntxtweight {width:30em;margin-bottom:1em !important;}
+#admin-dropdowntxtweight .form-label .form-shortname, #admin-dropdowntxtweight .form-setting .form-defaultinfo,#admin-dropdowntxtweight .form-label {display:none !important;}
+#admin-dropdowntxtweight .form-setting {margin: -4.75em 0 0 34em !important; text-align: left;width:8em;height:1.5em;}
+#admin-dropdowntxtweight .form-description{margin: 0 0 0 34em !important;width:8em;}
+#admin-dropdowntxtweight .form-item, #admin-dropdowntxtweight .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* dropdown: text style */
+#admin-dropdowntxtstyle {width:30em;margin-bottom:1em !important;}
+#admin-dropdowntxtstyle .form-label .form-shortname, #admin-dropdowntxtstyle .form-setting .form-defaultinfo,#admin-dropdowntxtstyle .form-label {display:none !important;}
+#admin-dropdowntxtstyle .form-setting {margin: -4.75em 0 0 44em !important; text-align: left;width:8em;height:1.5em;}
+#admin-dropdowntxtstyle .form-description{margin: 0 0 0 44em !important;width:8em;}
+#admin-dropdowntxtstyle .form-item, #admin-dropdowntxtstyle .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+
+
+/* menuhover Background - colour */
+#admin-menuhover {width:30em;margin-bottom:1em !important;}
+#admin-menuhover .form-label .form-shortname, #admin-menuhover .form-setting .form-defaultinfo {display:none !important;}
+#admin-menuhover .form-setting {margin: 0 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-menuhover .form-label{margin: 0 !important;width:8em !important;}
+#admin-menuhover .form-description{margin: 0 0 0 9em !important;width:20em;}
+#admin-menuhover .form-item, #admin-menuhover .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* menuhover Background - image */
+#admin-menuhoverimage {width:30em;margin-bottom:1em !important;}
+#admin-menuhoverimage .form-label .form-shortname, #admin-menuhoverimage .form-setting .form-defaultinfo,#admin-menuhoverimage .form-label {display:none !important;}
+#admin-menuhoverimage .form-setting {margin: -4.75em 0 0 31em !important; text-align: left;width:20em;height:1.5em;}
+#admin-menuhoverimage .form-description{margin: 0 0 0 31em !important;width:20em;}
+#admin-menuhoverimage .form-item, #admin-menuhoverimage .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* menuhover text */
+#admin-menuhovertext {width:30em;margin-bottom:1em !important;}
+#admin-menuhovertext .form-label .form-shortname, #admin-menuhovertext .form-setting .form-defaultinfo {display:none !important;}
+#admin-menuhovertext .form-setting {margin: -1em 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-menuhovertext .form-label{margin: 0 !important;width:8em !important;}
+#admin-menuhovertext .form-description{margin: 0 0 0 9em !important;width:15em;}
+#admin-menuhovertext .form-item, #admin-menuhovertext .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* menuhover: text size */
+#admin-menuhovertxtsize {width:30em;margin-bottom:1em !important;}
+#admin-menuhovertxtsize .form-label .form-shortname, #admin-menuhovertxtsize .form-setting .form-defaultinfo,#admin-menuhovertxtsize .form-label {display:none !important;}
+#admin-menuhovertxtsize .form-setting {margin: -4.75em 0 0 26em !important; text-align: left;width:20em;height:1.5em;}
+#admin-menuhovertxtsize .form-description{margin: 0 0 0 26em !important;width:20em;}
+#admin-menuhovertxtsize .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* menuhover: text weight */
+#admin-menuhovertxtweight {width:30em;margin-bottom:1em !important;}
+#admin-menuhovertxtweight .form-label .form-shortname, #admin-menuhovertxtweight .form-setting .form-defaultinfo,#admin-menuhovertxtweight .form-label {display:none !important;}
+#admin-menuhovertxtweight .form-setting {margin: -4.75em 0 0 34em !important; text-align: left;width:8em;height:1.5em;}
+#admin-menuhovertxtweight .form-description{margin: 0 0 0 34em !important;width:8em;}
+#admin-menuhovertxtweight .form-item, #admin-menuhovertxtweight .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* menuhover: text style */
+#admin-menuhovertxtstyle {width:30em;margin-bottom:1em !important;}
+#admin-menuhovertxtstyle .form-label .form-shortname, #admin-menuhovertxtstyle .form-setting .form-defaultinfo,#admin-menuhovertxtstyle .form-label {display:none !important;}
+#admin-menuhovertxtstyle .form-setting {margin: -4.75em 0 0 44em !important; text-align: left;width:8em;height:1.5em;}
+#admin-menuhovertxtstyle .form-description{margin: 0 0 0 44em !important;width:8em;}
+#admin-menuhovertxtstyle .form-item, #admin-menuhovertxtstyle .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+/***************************************************************************************************/
+/* side blocks heading */
+#admin-blocksinstructions {margin:0em 0 0.5em 20em !important;}
+#admin-blocksinstructions .form-label, #admin-blocksinstructions .form-setting {display:none !important;}
+#admin-blocksinstructions .form-description {margin: -1em 0 0.5em 20em !important; text-align: left;}
+
+/* side blocks screenshot */
+#admin-blocksimage {margin:-6em 0 0.5em 0 !important; width:22em;}
+#admin-blocksimage .form-label, #admin-blocksimage .form-setting {display:none !important;}
+#admin-blocksimage .form-description {margin: -4em 0 0.5em 0 !important; text-align: left;}
+
+/* Side Block Heading: background colour */
+#admin-sideblocksheadbgcolour {width:30em;margin-bottom:1em !important;}
+#admin-sideblocksheadbgcolour .form-label .form-shortname, #admin-sideblocksheadbgcolour .form-setting .form-defaultinfo {display:none !important;}
+#admin-sideblocksheadbgcolour .form-setting {margin: -33em 0 0 28em !important; text-align: left;width:20em;height:1.5em;}
+#admin-sideblocksheadbgcolour .form-label{margin: 0 0 0 18em !important;width:8em !important;}
+#admin-sideblocksheadbgcolour .form-description{margin: 0 0 0 28em !important;width:20em;}
+#admin-sideblocksheadbgcolour .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Side Block heading: background image */
+#admin-sideblocksheadbgimage {width:30em;margin-bottom:1em !important;}
+#admin-sideblocksheadbgimage .form-label .form-shortname, #admin-sideblocksheadbgimage .form-setting .form-defaultinfo,#admin-sideblocksheadbgimage .form-label {display:none !important;}
+#admin-sideblocksheadbgimage .form-setting {margin: -4.75em 0 0 48em !important; text-align: left;width:20em;height:1.5em;}
+#admin-sideblocksheadbgimage .form-description{margin: 0 0 0 48em !important;width:20em;}
+#admin-sideblocksheadbgimage .form-item, #admin-sideblocksheadbgimage .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Side Block heading: text colour */
+#admin-sideblocksheadtxtcolour {width:30em;margin-bottom:1em !important;}
+#admin-sideblocksheadtxtcolour .form-label .form-shortname, #admin-sideblocksheadtxtcolour .form-setting .form-defaultinfo,#admin-sideblocksheadtxtcolour .form-label {display:none !important;}
+#admin-sideblocksheadtxtcolour .form-setting {margin: -1em 0 0 28em !important; text-align: left;width:20em;height:1.5em;}
+#admin-sideblocksheadtxtcolour .form-description{margin: 0 0 0 28em !important;width:20em;}
+#admin-sideblocksheadtxtcolour .form-item, #admin-sideblocksheadtxtcolour .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Side Block Heading: text size */
+#admin-sideblocksheadtxtsize {width:30em;margin-bottom:1em !important;}
+#admin-sideblocksheadtxtsize .form-label .form-shortname, #admin-sideblocksheadtxtsize .form-setting .form-defaultinfo {display:none !important;}
+#admin-sideblocksheadtxtsize .form-setting {margin: -4.75em 0 0 48em !important; text-align: left;width:20em;height:1.5em;}
+#admin-sideblocksheadtxtsize .form-label{margin: 0 !important;width:8em !important;}
+#admin-sideblocksheadtxtsize .form-description{margin: 0 0 0 48em !important;width:20em;}
+#admin-sideblocksheadtxtsize .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Side Block heading: text weight */
+#admin-sideblocksheadtxtweight {width:30em;margin-bottom:1em !important;}
+#admin-sideblocksheadtxtweight .form-label .form-shortname, #admin-sideblocksheadtxtweight .form-setting .form-defaultinfo,#admin-sideblocksheadtxtweight .form-label {display:none !important;}
+#admin-sideblocksheadtxtweight .form-setting {margin: -4.75em 0 0 53em !important; text-align: left;width:8em;height:1.5em;}
+#admin-sideblocksheadtxtweight .form-description{margin: 0 0 0 53em !important;width:8em;}
+#admin-sideblocksheadtxtweight .form-item, #admin-sideblocksheadtxtweight .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Side Block heading: text style */
+#admin-sideblocksheadtxtstyle {width:30em;margin-bottom:1em !important;}
+#admin-sideblocksheadtxtstyle .form-label .form-shortname, #admin-sideblocksheadtxtstyle .form-setting .form-defaultinfo,#admin-sideblocksheadtxtstyle .form-label {display:none !important;}
+#admin-sideblocksheadtxtstyle .form-setting {margin: -4.75em 0 0 61em !important; text-align: left;width:8em;height:1.5em;}
+#admin-sideblocksheadtxtstyle .form-description{margin: 0 0 0 61em !important;width:8em;}
+#admin-sideblocksheadtxtstyle .form-item, #admin-sideblocksheadtxtstyle .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+/* Side Block Content: background colour */
+#admin-sideblockscontentbgcolour {width:30em;margin-bottom:1em !important;}
+#admin-sideblockscontentbgcolour .form-label .form-shortname, #admin-sideblockscontentbgcolour .form-setting .form-defaultinfo {display:none !important;}
+#admin-sideblockscontentbgcolour .form-setting {margin: -1em 0 0 28em !important; text-align: left;width:20em;height:1.5em;}
+#admin-sideblockscontentbgcolour .form-label{margin: 0 0 0 18em !important;width:8em !important;}
+#admin-sideblockscontentbgcolour .form-description{margin: 0 0 0 28em !important;width:20em;}
+#admin-sideblockscontentbgcolour .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Side Block Content: background image */
+#admin-sideblockscontentbgimage {width:30em;margin-bottom:1em !important;}
+#admin-sideblockscontentbgimage .form-label .form-shortname, #admin-sideblockscontentbgimage .form-setting .form-defaultinfo,#admin-sideblockscontentbgimage .form-label {display:none !important;}
+#admin-sideblockscontentbgimage .form-setting {margin: -4.75em 0 0 48em !important; text-align: left;width:20em;height:1.5em;}
+#admin-sideblockscontentbgimage .form-description{margin: 0 0 0 48em !important;width:20em;}
+#admin-sideblockscontentbgimage .form-item, #admin-sideblockscontentbgimage .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Side Block Content: text colour */
+#admin-sideblockscontenttxtcolour {width:30em;margin-bottom:1em !important;}
+#admin-sideblockscontenttxtcolour .form-label .form-shortname, #admin-sideblockscontenttxtcolour .form-setting .form-defaultinfo,#admin-sideblockscontenttxtcolour .form-label {display:none !important;}
+#admin-sideblockscontenttxtcolour .form-setting {margin: -1em 0 0 28em !important; text-align: left;width:20em;height:1.5em;}
+#admin-sideblockscontenttxtcolour .form-description{margin: 0 0 0 28em !important;width:20em;}
+#admin-sideblockscontenttxtcolour .form-item, #admin-sideblockscontenttxtcolour .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Side Block Content: text size */
+#admin-sideblockscontenttxtsize {width:30em;margin-bottom:1em !important;}
+#admin-sideblockscontenttxtsize .form-label .form-shortname, #admin-sideblockscontenttxtsize .form-setting .form-defaultinfo {display:none !important;}
+#admin-sideblockscontenttxtsize .form-setting {margin: -4.75em 0 0 48em !important; text-align: left;width:20em;height:1.5em;}
+#admin-sideblockscontenttxtsize .form-label{margin: 0 !important;width:8em !important;}
+#admin-sideblockscontenttxtsize .form-description{margin: 0 0 0 48em !important;width:20em;}
+#admin-sideblockscontenttxtsize .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Side Block Content: text weight */
+#admin-sideblockscontenttxtweight {width:30em;margin-bottom:1em !important;}
+#admin-sideblockscontenttxtweight .form-label .form-shortname, #admin-sideblockscontenttxtweight .form-setting .form-defaultinfo,#admin-sideblockscontenttxtweight .form-label {display:none !important;}
+#admin-sideblockscontenttxtweight .form-setting {margin: -4.75em 0 0 53em !important; text-align: left;width:8em;height:1.5em;}
+#admin-sideblockscontenttxtweight .form-description{margin: 0 0 0 53em !important;width:8em;}
+#admin-sideblockscontenttxtweight .form-item, #admin-sideblockscontenttxtweight .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Side Block Content: text style */
+#admin-sideblockscontenttxtstyle {width:30em;margin-bottom:1em !important;}
+#admin-sideblockscontenttxtstyle .form-label .form-shortname, #admin-sideblockscontenttxtstyle .form-setting .form-defaultinfo,#admin-sideblockscontenttxtstyle .form-label {display:none !important;}
+#admin-sideblockscontenttxtstyle .form-setting {margin: -4.75em 0 0 61em !important; text-align: left;width:8em;height:1.5em;}
+#admin-sideblockscontenttxtstyle .form-description{margin: 0 0 0 61em !important;width:8em;}
+#admin-sideblockscontenttxtstyle .form-item, #admin-sideblockscontenttxtstyle .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Side block border */
+#admin-blocksborder {width:30em;margin-bottom:1em !important;}
+#admin-blocksborder .form-label .form-shortname, #admin-blocksborder .form-setting .form-defaultinfo {display:none !important;}
+#admin-blocksborder .form-setting {margin: -1em 0 0 28em !important; text-align: left;width:20em;height:1.5em;}
+#admin-blocksborder .form-label{margin: 0 0 0 18em !important;width:8em !important;}
+#admin-blocksborder .form-description{margin: 0 0 0 28em !important;width:30em;}
+#admin-blocksborder .form-item, #admin-blocksborder .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+/* sideblocks: Rounded corners top left */
+#admin-sideblocksrctl {width:30em;margin-bottom:1em !important;}
+#admin-sideblocksrctl .form-label .form-shortname, #admin-sideblocksrctl .form-setting .form-defaultinfo {display:none !important;}
+#admin-sideblocksrctl .form-setting {margin: 2em 0 0 44em !important; text-align: left;width:20em;height:1.5em;}
+#admin-sideblocksrctl .form-label{margin: 0 0 0 30em !important;width:12em !important;}
+#admin-sideblocksrctl .form-description{margin: 0 0 0 44em !important;width:12em;}
+#admin-sideblocksrctl .form-item, #admin-sideblocksrctl .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* sideblocks: Rounded corners top right */
+#admin-sideblocksrctr {width:30em;margin-bottom:1em !important;}
+#admin-sideblocksrctr .form-label .form-shortname, #admin-sideblocksrctr .form-setting .form-defaultinfo,#admin-sideblocksrctr .form-label {display:none !important;}
+#admin-sideblocksrctr .form-setting {margin: -4.75em 0 0 54em !important; text-align: left;width:8em;height:1.5em;}
+#admin-sideblocksrctr .form-description{margin: 0 0 0 54em !important;width:8em;}
+#admin-sideblocksrctr .form-item, #admin-sideblocksrctr .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* sideblocks: Rounded corners bottom left */
+#admin-sideblocksrcbl {width:30em;margin-bottom:1em !important;}
+#admin-sideblocksrcbl .form-label .form-shortname, #admin-sideblocksrcbl .form-setting .form-defaultinfo,#admin-sideblocksrcbl .form-label {display:none !important;}
+#admin-sideblocksrcbl .form-setting {margin: -1em 0 0 44em !important; text-align: left;width:8em;height:1.5em;}
+#admin-sideblocksrcbl .form-description{margin: 0 0 0 44em !important;width:8em;}
+#admin-sideblocksrcbl .form-item, #admin-sideblocksrcbl .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* sideblocks: Rounded corners bottom right */
+#admin-sideblocksrcbr {width:30em;margin-bottom:1em !important;}
+#admin-sideblocksrcbr .form-label .form-shortname, #admin-sideblocksrcbr .form-setting .form-defaultinfo,#admin-sideblocksrcbr .form-label {display:none !important;}
+#admin-sideblocksrcbr .form-setting {margin: -4.75em 0 0 54em !important; text-align: left;width:8em;height:1.5em;}
+#admin-sideblocksrcbr .form-description{margin: 0 0 0 54em !important;width:8em;}
+#admin-sideblocksrcbr .form-item, #admin-sideblocksrcbr .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+
+/***********************************************************************************************************************************/
+
+/* Dock Panel heading */
+#admin-dockpanelinstructions {margin:1em 0 0.5em 0 !important;}
+#admin-dockpanelinstructions .form-label, #admin-dockpanelinstructions .form-setting {display:none !important;}
+#admin-dockpanelinstructions .form-description {margin: 0 0 0 22em !important; text-align: left;}
+/* Dock Panel screenshot */
+#admin-dockpanelimage {margin:-4.75em 0 0.5em 0 !important; width:22em;}
+#admin-dockpanelimage .form-label, #admin-dockpanelimage .form-setting {display:none !important;}
+#admin-dockpanelimage .form-description {margin: -3em 0 0 1em !important; text-align: left;}
+
+/* Dock Panel background colour */
+#admin-dockpanelbackground {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelbackground .form-label .form-shortname, #admin-dockpanelbackground .form-setting .form-defaultinfo {display:none !important;}
+#admin-dockpanelbackground .form-setting {margin: -12em 0 0 28em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dockpanelbackground .form-label{margin: 0 0 0 18em !important;width:8em !important;}
+#admin-dockpanelbackground .form-description{margin: 0 0 0 28em !important;width:20em;}
+#admin-dockpanelbackground .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Dock Panel item background */
+#admin-dockitembackground {width:30em;margin-bottom:1em !important;}
+#admin-dockitembackground .form-label .form-shortname, #admin-dockitembackground .form-setting .form-defaultinfo,#admin-dockitembackground .form-label {display:none !important;}
+#admin-dockitembackground .form-setting {margin: -4.75em 0 0 48em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dockitembackground .form-description{margin: 0 0 0 48em !important;width:20em;}
+#admin-dockitembackground .form-item, #admin-dockitembackground .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Dock Panel labels: text colour */
+#admin-dockpanellabeltxtcolour {width:30em;margin-bottom:1em !important;}
+#admin-dockpanellabeltxtcolour .form-label .form-shortname, #admin-dockpanellabeltxtcolour .form-setting .form-defaultinfo,#admin-dockpanellabeltxtcolour .form-label {display:none !important;}
+#admin-dockpanellabeltxtcolour .form-setting {margin: -1em 0 0 28em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dockpanellabeltxtcolour .form-description{margin: 0 0 0 28em !important;width:20em;}
+#admin-dockpanellabeltxtcolour .form-item, #admin-dockpanellabeltxtcolour .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Dock Panel labels: text size */
+#admin-dockpanellabeltxtsize {width:30em;margin-bottom:1em !important;}
+#admin-dockpanellabeltxtsize .form-label .form-shortname, #admin-dockpanellabeltxtsize .form-setting .form-defaultinfo {display:none !important;}
+#admin-dockpanellabeltxtsize .form-setting {margin: -4.75em 0 0 48em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dockpanellabeltxtsize .form-label{margin: 0 !important;width:8em !important;}
+#admin-dockpanellabeltxtsize .form-description{margin: 0 0 0 48em !important;width:20em;}
+#admin-dockpanellabeltxtsize .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Dock Panel labels: text weight */
+#admin-dockpanellabeltxtweight {width:30em;margin-bottom:1em !important;}
+#admin-dockpanellabeltxtweight .form-label .form-shortname, #admin-dockpanellabeltxtweight .form-setting .form-defaultinfo,#admin-dockpanellabeltxtweight .form-label {display:none !important;}
+#admin-dockpanellabeltxtweight .form-setting {margin: -4.75em 0 0 53em !important; text-align: left;width:8em;height:1.5em;}
+#admin-dockpanellabeltxtweight .form-description{margin: 0 0 0 53em !important;width:8em;}
+#admin-dockpanellabeltxtweight .form-item, #admin-dockpanellabeltxtweight .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Dock Panel labels: text style */
+#admin-dockpanellabeltxtstyle {width:30em;margin-bottom:1em !important;}
+#admin-dockpanellabeltxtstyle .form-label .form-shortname, #admin-dockpanellabeltxtstyle .form-setting .form-defaultinfo,#admin-dockpanellabeltxtstyle .form-label {display:none !important;}
+#admin-dockpanellabeltxtstyle .form-setting {margin: -4.75em 0 0 61em !important; text-align: left;width:8em;height:1.5em;}
+#admin-dockpanellabeltxtstyle .form-description{margin: 0 0 0 61em !important;width:8em;}
+#admin-dockpanellabeltxtstyle .form-item, #admin-dockpanellabeltxtstyle .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+/* dockpanel: Rounded corners top left */
+#admin-dockpanelrctl {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelrctl .form-label .form-shortname, #admin-dockpanelrctl .form-setting .form-defaultinfo {display:none !important;}
+#admin-dockpanelrctl .form-setting {margin: 0 0 0 28em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dockpanelrctl .form-label{margin: 0 0 0 18em !important;width:8em !important;}
+#admin-dockpanelrctl .form-description{margin: 0 0 0 28em !important;width:12em;}
+#admin-dockpanelrctl .form-item, #admin-dockpanelrctl .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* dockpanel: Rounded corners top right */
+#admin-dockpanelrctr {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelrctr .form-label .form-shortname, #admin-dockpanelrctr .form-setting .form-defaultinfo,#admin-dockpanelrctr .form-label {display:none !important;}
+#admin-dockpanelrctr .form-setting {margin: -4.75em 0 0 34em !important; text-align: left;width:8em;height:1.5em;}
+#admin-dockpanelrctr .form-description{margin: 0 0 0 34em !important;width:8em;}
+#admin-dockpanelrctr .form-item, #admin-dockpanelrctr .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* dockpanel: Rounded corners bottom left */
+#admin-dockpanelrcbl {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelrcbl .form-label .form-shortname, #admin-dockpanelrcbl .form-setting .form-defaultinfo,#admin-dockpanelrcbl .form-label {display:none !important;}
+#admin-dockpanelrcbl .form-setting {margin: -4.75em 0 0 42em !important; text-align: left;width:8em;height:1.5em;}
+#admin-dockpanelrcbl .form-description{margin: 0 0 0 42em !important;width:8em;}
+#admin-dockpanelrcbl .form-item, #admin-dockpanelrcbl .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* dockpanel: Rounded corners bottom right */
+#admin-dockpanelrcbr {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelrcbr .form-label .form-shortname, #admin-dockpanelrcbr .form-setting .form-defaultinfo,#admin-dockpanelrcbr .form-label {display:none !important;}
+#admin-dockpanelrcbr .form-setting {margin: -4.75em 0 0 48em !important; text-align: left;width:8em;height:1.5em;}
+#admin-dockpanelrcbr .form-description{margin: 0 0 0 48em !important;width:8em;}
+#admin-dockpanelrcbr .form-item, #admin-dockpanelrcbr .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+/* Dock Panel BlockHeading: background colour */
+#admin-dockpanelblocksheadbgcolour {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelblocksheadbgcolour .form-label .form-shortname, #admin-dockpanelblocksheadbgcolour .form-setting .form-defaultinfo {display:none !important;}
+#admin-dockpanelblocksheadbgcolour .form-setting {margin: -1em 0 0 28em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dockpanelblocksheadbgcolour .form-label{margin: 0 0 0 18em !important;width:8em !important;}
+#admin-dockpanelblocksheadbgcolour .form-description{margin: 0 0 0 28em !important;width:20em;}
+#admin-dockpanelblocksheadbgcolour .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Dock Panel Blockheading: background image */
+#admin-dockpanelblocksheadbgimage {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelblocksheadbgimage .form-label .form-shortname, #admin-dockpanelblocksheadbgimage .form-setting .form-defaultinfo,#admin-dockpanelblocksheadbgimage .form-label {display:none !important;}
+#admin-dockpanelblocksheadbgimage .form-setting {margin: -4.75em 0 0 48em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dockpanelblocksheadbgimage .form-description{margin: 0 0 0 48em !important;width:20em;}
+#admin-dockpanelblocksheadbgimage .form-item, #admin-dockpanelblocksheadbgimage .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Dock Panel Blockheading: text colour */
+#admin-dockpanelblocksheadtxtcolour {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelblocksheadtxtcolour .form-label .form-shortname, #admin-dockpanelblocksheadtxtcolour .form-setting .form-defaultinfo,#admin-dockpanelblocksheadtxtcolour .form-label {display:none !important;}
+#admin-dockpanelblocksheadtxtcolour .form-setting {margin: -1em 0 0 28em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dockpanelblocksheadtxtcolour .form-description{margin: 0 0 0 28em !important;width:20em;}
+#admin-dockpanelblocksheadtxtcolour .form-item, #admin-dockpanelblocksheadtxtcolour .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Dock Panel BlockHeading: text size */
+#admin-dockpanelblocksheadtxtsize {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelblocksheadtxtsize .form-label .form-shortname, #admin-dockpanelblocksheadtxtsize .form-setting .form-defaultinfo, #admin-dockpanelblocksheadtxtsize .form-label {display:none !important;}
+#admin-dockpanelblocksheadtxtsize .form-setting {margin: -4.75em 0 0 48em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dockpanelblocksheadtxtsize .form-description{margin: 0 0 0 48em !important;width:20em;}
+#admin-dockpanelblocksheadtxtsize .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Dock Panel Blockheading: text weight */
+#admin-dockpanelblocksheadtxtweight {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelblocksheadtxtweight .form-label .form-shortname, #admin-dockpanelblocksheadtxtweight .form-setting .form-defaultinfo,#admin-dockpanelblocksheadtxtweight .form-label {display:none !important;}
+#admin-dockpanelblocksheadtxtweight .form-setting {margin: -4.75em 0 0 53em !important; text-align: left;width:8em;height:1.5em;}
+#admin-dockpanelblocksheadtxtweight .form-description{margin: 0 0 0 53em !important;width:8em;}
+#admin-dockpanelblocksheadtxtweight .form-item, #admin-dockpanelblocksheadtxtweight .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Dock Panel Blockheading: text style */
+#admin-dockpanelblocksheadtxtstyle {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelblocksheadtxtstyle .form-label .form-shortname, #admin-dockpanelblocksheadtxtstyle .form-setting .form-defaultinfo,#admin-dockpanelblocksheadtxtstyle .form-label {display:none !important;}
+#admin-dockpanelblocksheadtxtstyle .form-setting {margin: -4.75em 0 0 61em !important; text-align: left;width:8em;height:1.5em;}
+#admin-dockpanelblocksheadtxtstyle .form-description{margin: 0 0 0 61em !important;width:8em;}
+#admin-dockpanelblocksheadtxtstyle .form-item, #admin-dockpanelblocksheadtxtstyle .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+/* Dock Panel BlockContent: background colour */
+#admin-dockpanelblockscontentbgcolour {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelblockscontentbgcolour .form-label .form-shortname, #admin-dockpanelblockscontentbgcolour .form-setting .form-defaultinfo {display:none !important;}
+#admin-dockpanelblockscontentbgcolour .form-setting {margin: -1em 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dockpanelblockscontentbgcolour .form-label{margin: 0 !important;width:8em !important;}
+#admin-dockpanelblockscontentbgcolour .form-description{margin: 0 0 0 9em !important;width:20em;}
+#admin-dockpanelblockscontentbgcolour .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Dock Panel BlockContent: background image */
+#admin-dockpanelblockscontentbgimage {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelblockscontentbgimage .form-label .form-shortname, #admin-dockpanelblockscontentbgimage .form-setting .form-defaultinfo,#admin-dockpanelblockscontentbgimage .form-label {display:none !important;}
+#admin-dockpanelblockscontentbgimage .form-setting {margin: -4.75em 0 0 31em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dockpanelblockscontentbgimage .form-description{margin: 0 0 0 31em !important;width:20em;}
+#admin-dockpanelblockscontentbgimage .form-item, #admin-dockpanelblockscontentbgimage .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Dock Panel BlockContent: text colour */
+#admin-dockpanelblockscontenttxtcolour {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelblockscontenttxtcolour .form-label .form-shortname, #admin-dockpanelblockscontenttxtcolour .form-setting .form-defaultinfo,#admin-dockpanelblockscontenttxtcolour .form-label {display:none !important;}
+#admin-dockpanelblockscontenttxtcolour .form-setting {margin: -1em 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dockpanelblockscontenttxtcolour .form-description{margin: 0 0 0 9em !important;width:20em;}
+#admin-dockpanelblockscontenttxtcolour .form-item, #admin-dockpanelblockscontenttxtcolour .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Dock Panel BlockContent: text size */
+#admin-dockpanelblockscontenttxtsize {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelblockscontenttxtsize .form-label .form-shortname, #admin-dockpanelblockscontenttxtsize .form-setting .form-defaultinfo, #admin-dockpanelblockscontenttxtsize .form-label {display:none !important;}
+#admin-dockpanelblockscontenttxtsize .form-setting {margin: -4.75em 0 0 31em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dockpanelblockscontenttxtsize .form-description{margin: 0 0 0 31em !important;width:20em;}
+#admin-dockpanelblockscontenttxtsize .form-item, #admin-links .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Dock Panel BlockContent: text weight */
+#admin-dockpanelblockscontenttxtweight {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelblockscontenttxtweight .form-label .form-shortname, #admin-dockpanelblockscontenttxtweight .form-setting .form-defaultinfo,#admin-dockpanelblockscontenttxtweight .form-label {display:none !important;}
+#admin-dockpanelblockscontenttxtweight .form-setting {margin: -4.75em 0 0 36em !important; text-align: left;width:8em;height:1.5em;}
+#admin-dockpanelblockscontenttxtweight .form-description{margin: 0 0 0 36em !important;width:8em;}
+#admin-dockpanelblockscontenttxtweight .form-item, #admin-dockpanelblockscontenttxtweight .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Dock Panel BlockContent: text style */
+#admin-dockpanelblockscontenttxtstyle {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelblockscontenttxtstyle .form-label .form-shortname, #admin-dockpanelblockscontenttxtstyle .form-setting .form-defaultinfo,#admin-dockpanelblockscontenttxtstyle .form-label {display:none !important;}
+#admin-dockpanelblockscontenttxtstyle .form-setting {margin: -4.75em 0 0 44em !important; text-align: left;width:8em;height:1.5em;}
+#admin-dockpanelblockscontenttxtstyle .form-description{margin: 0 0 0 44em !important;width:8em;}
+#admin-dockpanelblockscontenttxtstyle .form-item, #admin-dockpanelblockscontenttxtstyle .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* Dock Panel Blockborder */
+#admin-dockpanelblocksborder {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelblocksborder .form-label .form-shortname, #admin-dockpanelblocksborder .form-setting .form-defaultinfo {display:none !important;}
+#admin-dockpanelblocksborder .form-setting {margin: -1em 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dockpanelblocksborder .form-label{margin: 0 !important;width:8em !important;}
+#admin-dockpanelblocksborder .form-description{margin: 0 0 0 9em !important;width:30em;}
+#admin-dockpanelblocksborder .form-item, #admin-dockpanelblocksborder .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+/* dockpanelblocks: Rounded corners top left */
+#admin-dockpanelblocksrctl {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelblocksrctl .form-label .form-shortname, #admin-dockpanelblocksrctl .form-setting .form-defaultinfo {display:none !important;}
+#admin-dockpanelblocksrctl .form-setting {margin: 0 0 0 9em !important; text-align: left;width:20em;height:1.5em;}
+#admin-dockpanelblocksrctl .form-label{margin: 0 !important;width:8em !important;text-align:left !important;}
+#admin-dockpanelblocksrctl .form-description{margin: 0 0 0 9em !important;width:12em;}
+#admin-dockpanelblocksrctl .form-item, #admin-dockpanelblocksrctl .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* dockpanelblocks: Rounded corners top right */
+#admin-dockpanelblocksrctr {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelblocksrctr .form-label .form-shortname, #admin-dockpanelblocksrctr .form-setting .form-defaultinfo,#admin-dockpanelblocksrctr .form-label {display:none !important;}
+#admin-dockpanelblocksrctr .form-setting {margin: -4.75em 0 0 15em !important; text-align: left !important;width:8em;height:1.5em;}
+#admin-dockpanelblocksrctr .form-description{margin: 0 0 0 15em !important;width:8em;}
+#admin-dockpanelblocksrctr .form-item, #admin-dockpanelblocksrctr .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* dockpanelblocks: Rounded corners bottom left */
+#admin-dockpanelblocksrcbl {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelblocksrcbl .form-label .form-shortname, #admin-dockpanelblocksrcbl .form-setting .form-defaultinfo,#admin-dockpanelblocksrcbl .form-label {display:none !important;}
+#admin-dockpanelblocksrcbl .form-setting {margin: -4.75em 0 0 23em !important; text-align: left;width:8em;height:1.5em;}
+#admin-dockpanelblocksrcbl .form-description{margin: 0 0 0 23em !important;width:8em;}
+#admin-dockpanelblocksrcbl .form-item, #admin-dockpanelblocksrcbl .clearfix {clear:none !important; margin-top:0.5em !important;}
+/* dockpanelblocks: Rounded corners bottom right */
+#admin-dockpanelblocksrcbr {width:30em;margin-bottom:1em !important;}
+#admin-dockpanelblocksrcbr .form-label .form-shortname, #admin-dockpanelblocksrcbr .form-setting .form-defaultinfo,#admin-dockpanelblocksrcbr .form-label {display:none !important;}
+#admin-dockpanelblocksrcbr .form-setting {margin: -4.75em 0 0 29em !important; text-align: left;width:8em;height:1.5em;}
+#admin-dockpanelblocksrcbr .form-description{margin: 0 0 0 28em !important;width:8em;}
+#admin-dockpanelblocksrcbr .form-item, #admin-dockpanelblocksrcbr .clearfix {clear:none !important; margin-top:0.5em !important;}
+
+
+/* FootNote and custom css block */
+#admin-footnote .form-label .form-shortname, #admin-footnote .form-setting .form-defaultinfo {display:none !important;}
+#admin-customcss .form-label .form-shortname, #admin-customcss .form-setting .form-defaultinfo {display:none !important;}
+
+
+

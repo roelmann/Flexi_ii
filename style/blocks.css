@@ -1,0 +1,79 @@
+.block.hidden .header {border-bottom-width:0;}
+.block.hidden .content {display: none;}
+
+.block {border-style: solid;border-width:0px;margin-top:0.5em;margin-bottom:0.5em;}
+.block .header h2 {
+margin:4px;
+color: [[setting:sideblocksheadtxtcolour]] !important;
+         font-size: [[setting:sideblocksheadtxtsize]];
+         font-weight: [[setting:sideblocksheadtxtweight]];
+         font-style: [[setting:sideblocksheadtxtstyle]];
+}
+.block .header {
+margin-top:-0.3em;margin-left:-1%;width:102%;
+background: [[setting:sideblocksheadbgcolour]] url([[setting:sideblocksheadbgimage]]) repeat-x ;
+    -moz-border-radius-topleft:[[setting:sideblocksrctl]]; -moz-border-radius-topright:[[setting:sideblocksrctr]]; border-top-left-radius:[[setting:sideblocksrctl]]; border-top-right-radius:[[setting:sideblocksrctr]];
+}
+.block .header .block_action {float:right; margin:4px;vertical-align:top;}
+.block .header .block_action input {margin-right:2px;}
+.block .content {padding:4px;}
+.block .footer {margin-bottom: 4px;}
+
+.block img.userpicture {width:16px;height:16px;margin-right:4px;}
+.block.beingmoved {border-width: 2px;border-style: dashed;}
+
+.block-region .hidden .header {border-bottom: 1px solid;}
+.block-region .hidden .content {display: none;}
+.block-region .invisible {opacity: 0.5;filter: alpha(opacity=0.5);}
+
+.blockmovetarget {display: block;height: 1em;margin-bottom: 1em;border-width: 2px;border-style: dashed;}
+
+.block .blockannotation {font-size:0.75em;margin: -1em 0 1em;}
+.block.beingmoved {border-width: 2px;border-style: dashed;}
+.block .content ul.list li.listentry {clear:both;}
+.block .content div.info {text-align:center;}
+
+/* Customisation */
+
+.block { 
+background: [[setting:sideblockscontentbgcolour]] url([[setting:sideblockscontentbgimage]]) repeat-x !important;
+border:[[setting:blocksborder]];
+    -moz-border-radius-topleft:[[setting:sideblocksrctl]]; -moz-border-radius-topright:[[setting:sideblocksrctr]]; border-top-left-radius:[[setting:sideblocksrctl]]; border-top-right-radius:[[setting:sideblocksrctr]];
+    -moz-border-radius-bottomleft: [[setting:sideblocksrcbl]]; -moz-border-radius-bottomright: [[setting:sideblocksrcbr]]; border-bottom-left-radius:[[setting:sideblocksrcbl]]; border-bottom-right-radius:[[setting:sideblocksrcbr]];
+}
+.block .content {
+color: [[setting:sideblockscontenttxtcolour]] !important;
+         font-size: [[setting:sideblockscontenttxtsize]];
+         font-weight: [[setting:sideblockscontenttxtweight]];
+         font-style: [[setting:sideblockscontenttxtstyle]];}
+
+/** List block contents **/
+.block .list .c0 {display:inline;}
+.block .list .c0 img.icon {vetical-align: middle}
+.block .list .c1 {margin-left:5px;display:inline;}
+
+/** Bugfixes Smallicon & Navicon **/
+
+.block_settings .block_tree li.item_with_icon > p img,
+.block_navigation .block_tree li.item_with_icon > p img{
+left:0;
+position:absolute;
+top:0px !important;
+vertical-align:middle;
+}  
+
+
+.block_settings .block_tree li.item_with_icon p img.smallicon,
+.block_settings .block_tree li.item_with_icon p img.navicon,
+.block_navigation .block_tree li.item_with_icon p img.smallicon,
+.block_navigation .block_tree li.item_with_icon p img.navicon {
+	margin: 0; 
+	padding: 0;
+	vertical-align:middle;
+}
+
+.block_navigation .block_tree .type_activity > .tree_item.branch img {
+left:0px;
+bottom: 0px;
+position:absolute;
+}

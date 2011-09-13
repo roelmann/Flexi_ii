@@ -1,0 +1,132 @@
+/* 
+Flexi_ii Docking Module
+-----------------------*/
+
+body.has_dock { width: 97%; margin-left:3%} /* shrinks page to accommodate docking module */
+
+#dock {
+background-color: [[setting:dockpanelbackground]] !important;
+width:3%;
+position:fixed;
+top:0px;
+left:2%;
+height:100%;
+z-index:11000;
+}
+#dock.nothingdocked {
+visibility: hidden;
+display:none;
+}
+#dock .controls {
+bottom: auto;
+background-color: [[setting:dockpanelbackground]] !important;
+-webkit-border-bottom-left-radius: 6px;
+-moz-border-radius-bottomleft: 6px;
+border-bottom-left-radius: 6px;
+}
+#dock .dockeditem.firstdockitem {
+margin-top: 1.5em;
+-webkit-border-top-left-radius: 6px;
+-moz-border-radius-topleft: 6px;
+border-top-left-radius: 6px;
+}
+#dock .dockeditem {
+background-color: [[setting:dockpanelbackground]] !important;
+padding: 2px;
+padding-right: 0px;
+}
+#dock .dockedtitle {
+padding-bottom: 5px;
+cursor:pointer;
+background-color: [[setting:dockitembackground]];
+    -moz-border-radius-topleft:[[setting:dockpanelrctl]]; -moz-border-radius-topright:[[setting:dockpanelrctr]]; border-top-left-radius:[[setting:dockpanelrctl]]; border-top-right-radius:[[setting:dockpanelrctr]];
+    -moz-border-radius-bottomleft: [[setting:dockpanelrcbl]]; -moz-border-radius-bottomright: [[setting:dockpanelrcbr]]; border-bottom-left-radius:[[setting:dockpanelrcbl]]; border-bottom-right-radius:[[setting:dockpanelrcbr]];
+}
+
+#dock .dockedtitle h2 {
+margin: 0;
+padding: 10px 3px;
+color: [[setting:dockpanellabeltxtcolour]];
+         font-size: [[setting:dockpanellabeltxtsize]];
+         font-weight: [[setting:dockpanellabeltxtweight]];
+         font-style: [[setting:dockpanellabeltxtstyle]];
+}
+
+.dockedtitle.activeitem h2 {
+color: [[setting:dockpanellabeltxtcolour]] !important;
+         font-size: [[setting:dockpanellabeltxtsize]];
+         font-weight: [[setting:dockpanellabeltxtweight]];
+         font-style: [[setting:dockpanellabeltxtstyle]];
+}
+
+#dock .dockedtitle.activeitem {
+background-color:[[setting:dockpanelblocksheadbgcolour]];
+width: 35px;
+    -moz-border-radius-topleft:[[setting:dockpanelrctl]]; -moz-border-radius-topright:[[setting:dockpanelrctr]]; border-top-left-radius:[[setting:dockpanelrctl]]; border-top-right-radius:[[setting:dockpanelrctr]];
+    -moz-border-radius-bottomleft: [[setting:dockpanelrcbl]]; -moz-border-radius-bottomright: [[setting:dockpanelrcbr]]; border-bottom-left-radius:[[setting:dockpanelrcbl]]; border-bottom-right-radius:[[setting:dockpanelrcbr]];
+}
+
+#dock .controls img {
+cursor:pointer;
+margin-left: 10px;
+}
+
+/*
+Docked Item Panel
+-----------------------*/
+
+#dockeditempanel {
+width: 250px;
+position: relative;
+z-index: 12000;
+left: 100%;
+}
+#dockeditempanel.dockitempanel_hidden {
+display:none;
+}
+#dockeditempanel .dockeditempanel_content {
+background: [[setting:dockpanelblockscontentbgcolour]] url([[setting:dockpanelblockscontentbgimage]]) repeat-x left top;
+margin: 0 3px;
+position: relative;
+min-height: 100px;
+border:[[setting:dockpanelblocksborder]];
+color: [[setting:dockpanelblockscontenttxtcolour]];
+         font-size: [[setting:dockpanelblockscontenttxtsize]];
+         font-weight: [[setting:dockpanelblockscontenttxtweight]];
+         font-style: [[setting:dockpanelblockscontenttxtstyle]];
+    -moz-border-radius-topleft:[[setting:dockpanelblocksrctl]]; -moz-border-radius-topright:[[setting:dockpanelblocksrctr]]; border-top-left-radius:[[setting:dockpanelblocksrctl]]; border-top-right-radius:[[setting:dockpanelblocksrctr]];
+    -moz-border-radius-bottomleft: [[setting:dockpanelblocksrcbl]]; -moz-border-radius-bottomright: [[setting:dockpanelblocksrcbr]]; border-bottom-left-radius:[[setting:dockpanelblocksrcbl]]; border-bottom-right-radius:[[setting:dockpanelblocksrcbr]];
+}
+#dockeditempanel .dockeditempanel_hd {
+border-width: 0;
+background: [[setting:dockpanelblocksheadbgcolour]] url([[setting:dockpanelblocksheadbgimage]]) repeat-x left top;
+padding: 2px;
+}
+#dockeditempanel .dockeditempanel_bd {overflow:auto;width:auto;}
+#dockeditempanel .dockeditempanel_bd .block_docked {
+margin:10px;
+}
+
+#dockeditempanel .block_calendar_month.block_docked {
+text-align: center;
+}
+#dockeditempanel .dockeditempanel_hd {
+border-bottom:1px dotted [[setting:dockpanelblocksheadbgcolour]];
+text-align: right;
+}
+#dockeditempanel .dockeditempanel_hd h2 {
+display:inline;
+margin: 0;
+padding-right: 1em;
+color: [[setting:dockpanelblocksheadtxtcolour]];
+         font-size: [[setting:dockpanellabeltxtsize]];
+         font-weight: [[setting:dockpanellabeltxtweight]];
+         font-style: [[setting:dockpanellabeltxtstyle]];
+}
+#dockeditempanel .dockeditempanel_hd .commands {
+display:inline;
+}
+#dockeditempanel .dockeditempanel_hd .commands img {
+margin-right: 3px;
+vertical-align: middle;
+}
