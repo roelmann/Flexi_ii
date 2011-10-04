@@ -6,7 +6,7 @@
 .course-content ul.weeks li.section .right {padding:5px 0;}
 
 /** Course **/
-.coursebox {border:1px solid #DDD;border-color:#DDDDDD;}
+.coursebox {border:1px solid #DDD;}
 .coursebox .info {margin:5px;font-size:1em;}
 .coursebox .info .name {margin:3px 0;}
 .coursebox .info .teachers {margin:0 1em;font-size:0.9em;}
